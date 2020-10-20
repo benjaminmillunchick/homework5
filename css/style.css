@@ -60,20 +60,25 @@ footer{
 
 @keyframes logo_wiggle{
   /*Your code here.*/
-
+  from {width: 25px;}
+  to {width: 420px;}
 } 
 
 #logo{
    /*Your code here.*/
- 
+  animation-name: logo_wiggle;
+  animation-duration: 15s;
 }
 
 /* Cards! */
 .pricing{
-    min-height: 500px;
-    /*Your code here.*/
-    /*Don't forget to vertically and horizontally alight the card*/
-  
+  min-height: 500px;
+  /*Your code here.*/
+  /*Don't forget to vertically and horizontally alight the card*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
 }
 
 .card {
@@ -83,7 +88,7 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-
+  flex-basis: 400px;
 }
 
 .card > header{
